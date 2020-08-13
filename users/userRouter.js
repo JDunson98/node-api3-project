@@ -25,7 +25,7 @@ router.post('/:id/posts',validateUserId, validatePost, (req, res) => {
           })
 });
 
-router.get('/', (req, res) => {
+router.get('/posts', (req, res) => {
   userDb.get(req.query)
           .then((users) => {
             res.status(200).json(users)

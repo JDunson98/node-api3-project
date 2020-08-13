@@ -19,7 +19,7 @@ server.use((err, req, res, next) => {
 })
 
 server.get('/', (req, res) => {
-  res.send(`Welcome ${process.env.COHORT}`);
+  res.status(200).json({message: `Welcome ${process.env.COHORT}`});
 });
 
 //custom middleware
