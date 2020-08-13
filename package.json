@@ -4,7 +4,7 @@
     "description": "Node API 3 Project",
     "main": "index.js",
     "scripts": {
-        "server": "cross-env COHORT=webpt16 nodemon index.js",
+        "server": "nodemon --require dotenv/config nodemon index.js",
         "start": "nodemon index.js"
     },
     "repository": {
